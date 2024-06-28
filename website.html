@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website - Realtors Circle</title>
+
+    <!--asset-->
+    <link rel="shortcut icon" type="text/css" href="asset/img/favicon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://preview.colorlib.com/theme/bootstrap/css-table-19/css/style.css">
+
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="vendor/fontawesome/all.min.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="vendor/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="vendor/datatables/css/jquery.dataTables.min.css">
+
+    <!-- Bootstrap daterangepicker -->
+    <link rel="stylesheet" href="vendor/bootstrap-daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+    <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
+
+    <!--Custom CSS-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="asset/css/responsive.css">
+</head>
+
+
+<body>
+    <div class="page-wrapper">
+        <header>
+          <div class="top">
+              <div class="container">
+                  <h3 class="logo">Success Haven</h3>
+                  <div class="search-ctn d-none d-md-block">
+                      <img src="asset/img/icons/search-icon.png" alt="">
+                      <input type="text" placeholder="Search">
+                  </div>
+                  <div class="nomepro">
+                      <div class="item">
+                          <a href="notification.html"><img src="asset/img/icons/notification-icon.png" alt=""></a>
+                      </div>
+                      <div class="item">
+                          <a href="message.html"><img src="asset/img/icons/comment-icon.png" alt=""></a>
+                      </div>
+                      <div class="drop-now cursor-p d-flex align-items-center justify-content end gap-2">
+                        <div class="item dpi">
+                            <div class="profile-dropdown">
+                                <div class="d-flex align-items-center justify-content-between gap-4">
+                                    <div class="d-flex align-items-center align-items-start gap-3">
+                                        <div class="img">
+                                            <img src="asset/img/user-img.png" class="img-flui" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="profile-dropdown-items profile-items">
+                                    <li class="dropdown-item">
+                                        <a href="profile.html">
+                                        Profile</a>
+                                    </li>
+                                    <li class="dropdown-item border-0">
+                                        <a href="notification.html">
+                                        Notifications</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="javascript:;">
+                                        Logout</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="directions close">
+                          <i class="fa fa-chevron-down"></i>
+                          <i class="fa fa-chevron-up"></i>
+                      </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+           <nav class="navbar navbar-expand-lg">
+               <div class="container cosynav">
+                 <a class="navbar-brand text-light" href="">
+                   <small>Good morning</small> <br> 
+                   <span>Hello John Doe</span>
+                 </a>
+       
+                 <!-- Nav Item -->
+                 <ul class="navbar-nav ma-auto  nav-sm">
+                   <!-- Logo on small screen -->
+                   <div class="sm-logo-ctn d-lg-none opacity-75">
+                     <div class="menu-btn d-lg-none d-sm-block">
+                       <!-- <div class="menu-btn-burger"></div> -->
+                     <i class="fa fa-arrow-right"></i>
+                     </div>
+                     <!-- <img src="asset/img/logo.png" class="img-fluid mb-2" alt=""> -->
+                   </div>
+                   <!-- <span class="close d-lg-none d-sm-block">&times;</span> -->
+                   <li class="nav-item">
+                     <a class="nav-link" href="index.html">Dashboard </a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="properties.html">Properties</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link " href="realtors.html">Realtors</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link " href="customers.html">Customers</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link active" href="website.html">Website</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link " href="settings.html">Settings</a>
+                   </li>
+                  
+                 </ul>
+                 <!-- Harmburger menu icon -->
+                 <div class="menu-btn d-lg-none d-sm-block">
+                   <div class="menu-btn-burger"></div>
+                 </div>
+               </div>
+             </nav>
+        </header>
+        <main>
+          <div class="container mt-4">
+               <form action="">
+                    <div class="form-group mb-4">
+                         <div class="web-logo-ctn" id="web-logo-ctn">
+                              <img src="asset/img/logo-img.png" alt="">
+                         </div>
+                         <div class="text-center">
+                              <label for="web-logo-input" class="web-label">
+                                   <input type="file" name="" class="d-none" accept="image/*" id="web-logo-input">
+                                   <span>Change Logo</span><small class="primary-color">(24px24x)</small>
+                                   <img src="asset/img/icons/copy-icon.png" width="18px" alt="">
+                              </label>
+                         </div>
+                    </div>
+                    <div class="form-group counter-container mb-4">
+                         <label for="">Hero Text</label>
+                         <textarea name="" class="form-control text-source" rows="5"></textarea>
+                         <div class="text-end">
+                           <small class="primary-color">
+                              <span class="entered-text primary-color">0</span>/<span class="total-text primary-color">20</span> words
+                         </small>
+                         </div>
+                    </div>
+                    <div class="form-group counter-container mb-4">
+                         <label for="">Footer Text</label>
+                         <textarea name="" class="form-control text-source" rows="5"></textarea>
+                         <div class="text-end">
+                           <small class="primary-color">
+                              <span class="entered-text primary-color">0</span>/<span class="total-text primary-color">20</span> words
+                         </small>
+                         </div>
+                    </div>
+                    <div class="form-group mb-5">
+                         <label for="banner" class="primary-color">Banner Image</label>
+                         <div class="web-banner-ctn" id="web-banner-ctn">
+                              <img src="asset/img/bg-img.png" alt="">
+                         </div>
+                         <div class="text-center">
+                              <label for="web-banner-input" class="web-label">
+                                   <input type="file" accept="image/*" id="web-banner-input" class="d-none">
+                                   <span>Change banner image</span>
+                                   <img src="asset/img/icons/pen-icon.png" width="18px" alt="">
+                              </label>
+                         </div>
+                    </div>
+                    <div class="form-group mb-4">
+                         <label for="" class="primary-color">Color Palette</label>
+                         <div class="npi-container">
+                              <div class="npi-card input-ctn border-0">
+                                  <label for="img-upload" class="web-label">
+                                    <span><a href="create-color-palette.html">New Color Palette</a></span>
+                                  </label>
+                              </div>
+                              <div class="capat-card p-2">
+                                   <div class="container">
+                                        <div class="row">
+                                             <div class="col-6 primary-pal"></div>
+                                             <div class="col-6 secondary-pal"></div>
+                                             <div class="col-6 accent-pal"></div>
+                                             <div class="col-6 text-pal"></div>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="capat-card p-2">
+                                   <div class="container">
+                                        <div class="row">
+                                             <div class="col-6 primary-pal"></div>
+                                             <div class="col-6 secondary-pal"></div>
+                                             <div class="col-6 accent-pal"></div>
+                                             <div class="col-6 text-pal"></div>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="capat-card p-2">
+                                   <div class="container">
+                                        <div class="row">
+                                             <div class="col-6 primary-pal"></div>
+                                             <div class="col-6 secondary-pal"></div>
+                                             <div class="col-6 accent-pal"></div>
+                                             <div class="col-6 text-pal"></div>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="capat-card p-2">
+                                   <div class="container">
+                                        <div class="row">
+                                             <div class="col-6 primary-pal"></div>
+                                             <div class="col-6 secondary-pal"></div>
+                                             <div class="col-6 accent-pal"></div>
+                                             <div class="col-6 text-pal"></div>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="capat-card p-2">
+                                   <div class="container">
+                                        <div class="row">
+                                             <div class="col-6 primary-pal"></div>
+                                             <div class="col-6 secondary-pal"></div>
+                                             <div class="col-6 accent-pal"></div>
+                                             <div class="col-6 text-pal"></div>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="capat-card p-2">
+                                   <div class="container">
+                                        <div class="row">
+                                             <div class="col-6 primary-pal"></div>
+                                             <div class="col-6 secondary-pal"></div>
+                                             <div class="col-6 accent-pal"></div>
+                                             <div class="col-6 text-pal"></div>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="capat-card p-2">
+                                   <div class="container">
+                                        <div class="row">
+                                             <div class="col-6 primary-pal"></div>
+                                             <div class="col-6 secondary-pal"></div>
+                                             <div class="col-6 accent-pal"></div>
+                                             <div class="col-6 text-pal"></div>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="form-group mb-4">
+                         <label for="">Social Media Links</label>
+                         <div class="row mt-2">
+                              <div class="col-sm-6 mb-4">
+                                   <div class="form-control input-group">
+                                        <div class="input-icon">
+                                             <img src="asset/img/icons/facebook-icon.png" width="30px" alt="">
+                                        </div>
+                                        <input type="text" name="">
+                                   </div>
+                              </div>
+                              <div class="col-sm-6 mb-4">
+                                   <div class="form-control input-group">
+                                        <div class="input-icon">
+                                             <img src="asset/img/icons/instagram-icon.png" width="30px" alt="">
+                                        </div>
+                                        <input type="text" name="">
+                                   </div>
+                              </div>
+                              <div class="col-sm-6 mb-4">
+                                   <div class="form-control input-group">
+                                        <div class="input-icon">
+                                             <img src="asset/img/icons/twitter-icon.png" width="30px" alt="">
+                                        </div>
+                                        <input type="text" name="">
+                                   </div>
+                              </div>
+                              <div class="col-sm-6 mb-4">
+                                   <div class="form-control input-group">
+                                        <div class="input-icon">
+                                             <img src="asset/img/icons/google-icon-dark.png" width="30px" alt="">
+                                        </div>
+                                        <input type="text" name="">
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="form-group mb-4">
+                         <label for="" class="primary-color">Testimonials</label>
+                         <div class="npi-container testimonial">
+                              <div class="npi-card input-ctn">
+                                  <label for="img-upload" class="web-label">
+                                    <span><a href="create-testimonial.html">New Testimonial</a></span>
+                                  </label>
+                              </div>
+                              <div class="testimonial-card">
+                                   <div class="update-ctn">
+                                       <div class="primary-color cursor-p dropdown text-end"><i class="fa fa-ellipsis-h"></i></div>
+                                       <div class="edet-ctn">
+                                        <a href="edit-testimonial.html"><img width="18px" src="asset/img/icons/pen-icon.png" alt=""> &nbsp; Edit Testimonial</a>
+                                        <span class="trash-card"><i class="fa fa-trash"></i> &nbsp; Delete Testimonial</span>
+                                       </div>
+                                   </div>
+                                   <div class="img-ctn"><img src="asset/img/user-img.png" alt=""></div>
+                                   <h4 class="tc-name">Kalu victor </h4>
+                                   <div class="tc-stars">
+                                     <img src="asset/img/icons/star-icon-gray.png" alt="">
+                                     <img src="asset/img/icons/star-icon-gray.png" alt="">
+                                     <img src="asset/img/icons/star-icon-gray.png" alt="">
+                                     <img src="asset/img/icons/star-icon-gray.png" alt="">
+                                     <img src="asset/img/icons/star-icon-gray.png" alt="">
+                                   </div>
+                                   <div class="text-center mb-2"><img width="20px" src="asset/img/icons/quotation-icon.png" alt="">
+                                   </div>
+                                   <p class="tc-description text-center">
+                                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolor fugit aliquid odio sunt ab.
+                                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolor fugit aliquid odio sunt ab.
+                                   </p>
+                              </div>
+                              <div class="testimonial-card">
+                                   <div class="update-ctn">
+                                       <div class="primary-color cursor-p dropdown text-end"><i class="fa fa-ellipsis-h"></i></div>
+                                       <div class="edet-ctn">
+                                        <a href="edit-testimonial.html"><img width="18px" src="asset/img/icons/pen-icon.png" alt=""> &nbsp; Edit Testimonial</a>
+                                        <span class="trash-card"><i class="fa fa-trash"></i> &nbsp; Delete Testimonial</span>
+                                       </div>
+                                   </div>
+                                   <div class="img-ctn"><img src="asset/img/user-img.png" alt=""></div>
+                                   <h4 class="tc-name">Kalu victor </h4>
+                                   <div class="tc-stars">
+                                     <img src="asset/img/icons/star-icon-gray.png" alt="">
+                                     <img src="asset/img/icons/star-icon-gray.png" alt="">
+                                     <img src="asset/img/icons/star-icon-gray.png" alt="">
+                                     <img src="asset/img/icons/star-icon-gray.png" alt="">
+                                     <img src="asset/img/icons/star-icon-gray.png" alt="">
+                                   </div>
+                                   <div class="text-center mb-2"><img width="20px" src="asset/img/icons/quotation-icon.png" alt="">
+                                   </div>
+                                   <p class="tc-description text-center">
+                                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolor fugit aliquid odio sunt ab.
+                                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolor fugit aliquid odio sunt ab.
+                                   </p>
+                              </div>
+                              <div class="testimonial-card">
+                                   <div class="update-ctn">
+                                       <div class="primary-color cursor-p dropdown text-end"><i class="fa fa-ellipsis-h"></i></div>
+                                       <div class="edet-ctn">
+                                        <a href="edit-testimonial.html"><img width="18px" src="asset/img/icons/pen-icon.png" alt=""> &nbsp; Edit Testimonial</a>
+                                        <span class="trash-card"><i class="fa fa-trash"></i> &nbsp; Delete Testimonial</span>
+                                       </div>
+                                   </div>
+                                   <div class="img-ctn"><img src="asset/img/user-img.png" alt=""></div>
+                                   <h4 class="tc-name">Kalu victor </h4>
+                                   <div class="tc-stars">
+                                     <img src="asset/img/icons/star-icon-gray.png" alt="">
+                                     <img src="asset/img/icons/star-icon-gray.png" alt="">
+                                     <img src="asset/img/icons/star-icon-gray.png" alt="">
+                                     <img src="asset/img/icons/star-icon-gray.png" alt="">
+                                     <img src="asset/img/icons/star-icon-gray.png" alt="">
+                                   </div>
+                                   <div class="text-center mb-2"><img width="20px" src="asset/img/icons/quotation-icon.png" alt="">
+                                   </div>
+                                   <p class="tc-description text-center">
+                                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolor fugit aliquid odio sunt ab.
+                                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolor fugit aliquid odio sunt ab.
+                                   </p>
+                              </div>
+                              <div class="testimonial-card">
+                                   <div class="update-ctn">
+                                       <div class="primary-color cursor-p dropdown text-end"><i class="fa fa-ellipsis-h"></i></div>
+                                       <div class="edet-ctn">
+                                        <a href="edit-testimonial.html"><img width="18px" src="asset/img/icons/pen-icon.png" alt=""> &nbsp; Edit Testimonial</a>
+                                        <span class="trash-card"><i class="fa fa-trash"></i> &nbsp; Delete Testimonial</span>
+                                       </div>
+                                   </div>
+                                   <div class="img-ctn"><img src="asset/img/user-img.png" alt=""></div>
+                                   <h4 class="tc-name">Kalu victor </h4>
+                                   <div class="tc-stars">
+                                     <img src="asset/img/icons/star-icon-gray.png" alt="">
+                                     <img src="asset/img/icons/star-icon-gray.png" alt="">
+                                     <img src="asset/img/icons/star-icon-gray.png" alt="">
+                                     <img src="asset/img/icons/star-icon-gray.png" alt="">
+                                     <img src="asset/img/icons/star-icon-gray.png" alt="">
+                                   </div>
+                                   <div class="text-center mb-2"><img width="20px" src="asset/img/icons/quotation-icon.png" alt="">
+                                   </div>
+                                   <p class="tc-description text-center">
+                                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolor fugit aliquid odio sunt ab.
+                                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolor fugit aliquid odio sunt ab.
+                                   </p>
+                              </div>
+                              <div class="testimonial-card">
+                                   <div class="update-ctn">
+                                       <div class="primary-color cursor-p dropdown text-end"><i class="fa fa-ellipsis-h"></i></div>
+                                       <div class="edet-ctn">
+                                        <a href="edit-testimonial.html"><img width="18px" src="asset/img/icons/pen-icon.png" alt=""> &nbsp; Edit Testimonial</a>
+                                        <span class="trash-card"><i class="fa fa-trash"></i> &nbsp; Delete Testimonial</span>
+                                       </div>
+                                   </div>
+                                   <div class="img-ctn"><img src="asset/img/user-img.png" alt=""></div>
+                                   <h4 class="tc-name">Kalu victor </h4>
+                                   <div class="tc-stars">
+                                     <img src="asset/img/icons/star-icon-gray.png" alt="">
+                                     <img src="asset/img/icons/star-icon-gray.png" alt="">
+                                     <img src="asset/img/icons/star-icon-gray.png" alt="">
+                                     <img src="asset/img/icons/star-icon-gray.png" alt="">
+                                     <img src="asset/img/icons/star-icon-gray.png" alt="">
+                                   </div>
+                                   <div class="text-center mb-2"><img width="20px" src="asset/img/icons/quotation-icon.png" alt="">
+                                   </div>
+                                   <p class="tc-description text-center">
+                                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolor fugit aliquid odio sunt ab.
+                                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolor fugit aliquid odio sunt ab.
+                                   </p>
+                              </div>
+                              <div class="testimonial-card">
+                                   <div class="update-ctn">
+                                       <div class="primary-color cursor-p dropdown text-end"><i class="fa fa-ellipsis-h"></i></div>
+                                       <div class="edet-ctn">
+                                        <a href="edit-testimonial.html"><img width="18px" src="asset/img/icons/pen-icon.png" alt=""> &nbsp; Edit Testimonial</a>
+                                        <span class="trash-card"><i class="fa fa-trash"></i> &nbsp; Delete Testimonial</span>
+                                       </div>
+                                   </div>
+                                   <div class="img-ctn"><img src="asset/img/user-img.png" alt=""></div>
+                                   <h4 class="tc-name">Kalu victor </h4>
+                                   <div class="tc-stars">
+                                     <img src="asset/img/icons/star-icon-gray.png" alt="">
+                                     <img src="asset/img/icons/star-icon-gray.png" alt="">
+                                     <img src="asset/img/icons/star-icon-gray.png" alt="">
+                                     <img src="asset/img/icons/star-icon-gray.png" alt="">
+                                     <img src="asset/img/icons/star-icon-gray.png" alt="">
+                                   </div>
+                                   <div class="text-center mb-2"><img width="20px" src="asset/img/icons/quotation-icon.png" alt="">
+                                   </div>
+                                   <p class="tc-description text-center">
+                                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolor fugit aliquid odio sunt ab.
+                                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolor fugit aliquid odio sunt ab.
+                                   </p>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="form-group mb-4">
+                         <label for="" class="primary-color">FAQs</label>
+                         <div class="faq-container">
+                              <div class="qua-container">
+                                   <div class="question">
+                                        <h6 class="question-title">How to become a realtor?</h6>
+                                        <div class="update-ctn">
+                                             <div class="primary-color cursor-p dropdown text-end"><i class="fa fa-ellipsis-v"></i></div>
+                                             <div class="edet-ctn">
+                                              <a href="edit-faq.html"><img width="18px" src="asset/img/icons/pen-icon.png" alt=""> &nbsp; Edit FAQ</a>
+                                              <span class="trash-faq"><i class="fa fa-trash"></i> &nbsp; Delete FAQ</span>
+                                             </div>
+                                         </div>
+                                   </div>
+                                   <div class="answer">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui quo aspernatur porro suscipit molestias in explicabo mollitia fugiat, soluta nisi!
+                                   </div>
+                              </div>
+                              <div class="qua-container">
+                                   <div class="question">
+                                        <h6 class="question-title">How to become a realtor?</h6>
+                                        <div class="update-ctn">
+                                             <div class="primary-color cursor-p dropdown text-end"><i class="fa fa-ellipsis-v"></i></div>
+                                             <div class="edet-ctn">
+                                              <a href="edit-faq.html"><img width="18px" src="asset/img/icons/pen-icon.png" alt=""> &nbsp; Edit FAQ</a>
+                                              <span class="trash-faq"><i class="fa fa-trash"></i> &nbsp; Delete FAQ</span>
+                                             </div>
+                                         </div>
+                                   </div>
+                                   <div class="answer d-none">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui quo aspernatur porro suscipit molestias in explicabo mollitia fugiat, soluta nisi!
+                                   </div>
+                              </div>
+                              <div class="qua-container">
+                                   <div class="question">
+                                        <h6 class="question-title">How to become a realtor?</h6>
+                                        <div class="update-ctn">
+                                             <div class="primary-color cursor-p dropdown text-end"><i class="fa fa-ellipsis-v"></i></div>
+                                             <div class="edet-ctn">
+                                              <a href="edit-faq.html"><img width="18px" src="asset/img/icons/pen-icon.png" alt=""> &nbsp; Edit FAQ</a>
+                                              <span class="trash-faq"><i class="fa fa-trash"></i> &nbsp; Delete FAQ</span>
+                                             </div>
+                                         </div>
+                                   </div>
+                                   <div class="answer d-none">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui quo aspernatur porro suscipit molestias in explicabo mollitia fugiat, soluta nisi!
+                                   </div>
+                              </div>
+                              <div class="qua-container">
+                                   <div class="question">
+                                        <h6 class="question-title">How to become a realtor?</h6>
+                                        <div class="update-ctn">
+                                             <div class="primary-color cursor-p dropdown text-end"><i class="fa fa-ellipsis-v"></i></div>
+                                             <div class="edet-ctn">
+                                              <a href="edit-faq.html"><img width="18px" src="asset/img/icons/pen-icon.png" alt=""> &nbsp; Edit FAQ</a>
+                                              <span class="trash-faq"><i class="fa fa-trash"></i> &nbsp; Delete FAQ</span>
+                                             </div>
+                                         </div>
+                                   </div>
+                                   <div class="answer d-none">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui quo aspernatur porro suscipit molestias in explicabo mollitia fugiat, soluta nisi!
+                                   </div>
+                              </div>
+                              <div class="qua-container">
+                                   <div class="question">
+                                        <h6 class="question-title">How to become a realtor?</h6>
+                                        <div class="update-ctn">
+                                             <div class="primary-color cursor-p dropdown text-end"><i class="fa fa-ellipsis-v"></i></div>
+                                             <div class="edet-ctn">
+                                              <a href="edit-faq.html"><img width="18px" src="asset/img/icons/pen-icon.png" alt=""> &nbsp; Edit FAQ</a>
+                                              <span class="trash-faq"><i class="fa fa-trash"></i> &nbsp; Delete FAQ</span>
+                                             </div>
+                                         </div>
+                                   </div>
+                                   <div class="answer d-none">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui quo aspernatur porro suscipit molestias in explicabo mollitia fugiat, soluta nisi!
+                                   </div>
+                              </div>
+                              <div class="qua-container">
+                                   <div class="question">
+                                        <h6 class="question-title">How to become a realtor?</h6>
+                                        <div class="update-ctn">
+                                             <div class="primary-color cursor-p dropdown text-end"><i class="fa fa-ellipsis-v"></i></div>
+                                             <div class="edet-ctn">
+                                              <a href="edit-faq.html"><img width="18px" src="asset/img/icons/pen-icon.png" alt=""> &nbsp; Edit FAQ</a>
+                                              <span class="trash-faq"><i class="fa fa-trash"></i> &nbsp; Delete FAQ</span>
+                                             </div>
+                                         </div>
+                                   </div>
+                                   <div class="answer d-none">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui quo aspernatur porro suscipit molestias in explicabo mollitia fugiat, soluta nisi!
+                                   </div>
+                              </div>
+                              <div class="qua-container">
+                                   <div class="question">
+                                        <h6 class="question-title">How to become a realtor?</h6>
+                                        <div class="update-ctn">
+                                             <div class="primary-color cursor-p dropdown text-end"><i class="fa fa-ellipsis-v"></i></div>
+                                             <div class="edet-ctn">
+                                              <a href="edit-faq.html"><img width="18px" src="asset/img/icons/pen-icon.png" alt=""> &nbsp; Edit FAQ</a>
+                                              <span class="trash-faq"><i class="fa fa-trash"></i> &nbsp; Delete FAQ</span>
+                                             </div>
+                                         </div>
+                                   </div>
+                                   <div class="answer d-none">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui quo aspernatur porro suscipit molestias in explicabo mollitia fugiat, soluta nisi!
+                                   </div>
+                              </div>
+                              <div class="mt-5 text-center mb-2">
+                                   <a href="create-faq.html" class="new-discussion-btn px-5">Add New FAQ</a>
+                              </div>
+                         </div>
+                    </div>
+                    <button class="new-discussion-btn btn-success w-100 d-block mb-5">Save</button>
+               </form>
+          </div>
+        </main>
+    </div>
+
+
+    <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm modal-dialog-centered">
+           <div class="modal-content">
+                <div class="modal-body rounded">
+                  <div class="d-flex align-items-center justify-content-center mb-2 mt-3">
+                      <img src="asset/img/icons/verify-icon.png" width="70px" alt="icon">
+                  </div>
+                     <h3 class="text-center mb-2">Success!</h3>
+                    <div class="text-center mb-4">
+                      Email sent.
+                    </div>
+                      <a href="realtors.html" type="button" class="new-discussion-btn btn-success w-100 mb-2"><i class="fa fa-arrow-left"></i> Go back home</a>
+                </div>
+           </div>
+      </div>
+  </div>
+
+
+
+    <!-- JS FILES -->
+    <script src="vendor/jquery/jQuery3.6.1.min.js"></script>
+    <script src="vendor/popper/popper.js"></script>
+    <script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="vendor/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="vendor/fontawesome/all.min.js"></script>
+    <script src="vendor/jquery-validate/jquery.validate.js"></script>
+    <script src="vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="vendor/moment/moment.min.js"></script>
+    <script src="vendor/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <script src="vendor/bootstrap-datepicker/bootstrap-datepicker.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- <script src="asset/js/dashboard.js"></script> -->
+    <script src="asset/js/plugins_init.js"></script>
+    <script src="asset/js/main.js"></script>
+    <script>
+     document.addEventListener('DOMContentLoaded', function(){
+         document.getElementById('web-logo-input').addEventListener('change', function(){
+             var input = this;
+             uploadImage('web-logo-ctn', input);
+         })
+         document.getElementById('web-banner-input').addEventListener('change', function(){
+             var input = this;
+             uploadImage('web-banner-ctn', input);
+         })
+     })
+
+     function uploadImage(id, input){
+          if (input.files && input.files[0]){
+                 var reader = new FileReader();
+                 reader.onload = function(e) {
+                     document.getElementById(id).innerHTML = '<img src="' + e.target.result + '" />';
+                 }
+
+               reader.readAsDataURL(input.files[0]);
+          }
+     }
+ </script>
+   <script>
+     $(document).ready(function(){
+       $('.text-source').on('keyup', function(){
+         var $this = $(this);
+         let totalLength = $(this).parent('.counter-container').find('.total-text').text();
+             totalLength = parseInt(totalLength);
+ 
+ 
+         let textLength = $(this).val().split(' ').filter(function(word){
+           return word != '';
+         }).length;
+ 
+         $(this).parent('.counter-container').find('.entered-text').text(textLength);
+ 
+         if(textLength >= totalLength){
+           var maxText = $this.val();
+           var newText = maxText.split(' ').slice(0, totalLength).join(' ');
+           $this.val(newText)
+         } 
+ 
+       });
+
+       $('.trash-card').on('click', function(){
+         var _this = $(this);
+          trash('.testimonial-card', _this);
+       });
+
+       $('.trash-faq').on('click', function(){
+          var _this = $(this);
+          trash('.qua-container', _this);
+       });
+
+
+       function trash(card, _this){
+          _this.parents(card).remove();
+       }
+
+       $('.question-title').on('click', function(){
+          var answerContainer = $(this).parents('.qua-container').find('.answer');
+          var otherAswerContainers = $(this).parents('.qua-container').siblings('.qua-container').find('.answer');
+          
+          otherAswerContainers.addClass('d-none');
+          if(answerContainer.hasClass('d-none')){
+               answerContainer.removeClass('d-none');
+          }else{
+               answerContainer.addClass('d-none');
+          }
+
+          
+       });
+
+
+       $('.update-ctn .dropdown').on('click', function(e){
+          e.stopPropagation();
+          var container = $(this).siblings('.edet-ctn');
+          if(container.hasClass('active')){
+               $(this).siblings('.edet-ctn').animate({right: '-500px'});
+               container.removeClass('active');
+          }else{
+               $(this).siblings('.edet-ctn').animate({right: '0px'});
+               container.addClass('active');
+          }
+       });
+
+       $('body').on('click', function(e){
+          e.stopPropagation();
+          $('.edet-ctn').animate({right: '-500px'});
+          $('.edet-ctn').removeClass('active');
+       })
+     });
+   </script>
+</body>
+
+</html>
